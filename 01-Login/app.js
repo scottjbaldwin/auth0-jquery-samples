@@ -5,10 +5,10 @@ $('document').ready(function() {
   loadingSpinner.css('display', 'none');;
 
   var webAuth = new auth0.WebAuth({
-    domain: AUTH0_DOMAIN,
-    clientID: AUTH0_CLIENT_ID,
-    redirectUri: AUTH0_CALLBACK_URL,
-    audience: 'https://' + AUTH0_DOMAIN + '/userinfo',
+    domain: "sjb.au.auth0.com",
+    clientID: "u5T67hRF6UGoVh5knoNP92CjUjPQEc4h",
+    redirectUri: "http://localhost:5000",
+    audience: 'https://' + "sjb.au.auth0.com" + '/userinfo',
     responseType: 'token id_token',
     scope: 'openid',
     leeway: 60
